@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define CZ 48
+
+typedef struct nom {
+     char AP[20];
+     char AM[20];
+     char nom[40];
+}nom;
+
+typedef struct UDA {
+     char nom[20];
+     char clave[10];
+     int op;
+     float calif;
+     int cred;
+}
+typedef struct kt {
+     nom nom1;
+     UDA *UDA1;
+     int NUA;
+     int NP;
+     float PNe;
+     float prom;
+     int Anio_ing;
+     int sem_ing;
+     int Anio_edr;
+
+}kt;
+
+int main(int argc, char *argv[]) {
+
+     FILE *fp;
+     char fn[20];
+     int i, n, j;
+     i = 0;
+     printf("ingrese el nombre del archivo: ");
+     // fn = %(fn+0) 
+     scanf("%s", fn);
+     fp = fopen(fn, "rb");
+     if (fp != NULL){
+
+     }
+     if (i == 0) {
+          printf("Ingrese Apellido paterno: ");
+          scanf("%s",kt1.nom1.AM);
+          printf("Ingrese Apellido materno: ");
+          scanf("%s",kt1.nom1.AM);
+          printf("Ingrese su(s) nombre(s)");
+          scanf("%s",kt1.nom1.nom);
+          printf("Ingrese su NUA: ");
+          scanf("%d", &kt.NUA);
+          printf("Ingrese su anio de ingreso");
+          scanf("%d", &kt1.Anio_ing);
+          printf("Ingrese su semestre de ingreso");
+          scanf("%d",&kt1.Sem_ing);
+     }
+
+     printf("Ingrese su numero de inscripciones");
+     scanf("%d", &kt1.NP)
+     printf("Numero de UDAs a capturar");
+     scanf("%s",&n);
+     UDA1 = (UDA*)malloc(n*sizeof(UDA));
+     for (j=0;j<n;j++) {
+          printf("UDA %d\n", j+1);
+          printf("Ingrese el nombre de la UDA");
+          scanf("%s",UDA->nom);
+          printf("Ingrese la clave");
+          scanf("%s",UDA[j].clave);
+          printf("Ingrese la calificacion");
+          scanf("%f", &(UDA[j].calif);
+          UDA1->cred = 10*UDA1->clave[4]+UDA1->clave[5]-11*CZ;
+          if (i == 0)
+               UDA[j].op = 1;
+     }
+     
+     free(UDA1);
+     fclose(fp);
+     getchar();
+     return 0;
+}
