@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
             printf("Ingrese el valor maximo: ");
             scanf("%f", &max);
           break;
-
+//
         default:
             break;
     }
