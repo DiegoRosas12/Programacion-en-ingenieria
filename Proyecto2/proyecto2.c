@@ -7,6 +7,22 @@
 #define N 50000
 #define CZ 48
 
+int ordenar(float P[], int n){
+	int i, j;
+	float aux;
+	for (i = 1; i < n; i++) {
+		j = i-1;
+		aux = X[i];
+		while (aux<X[j]) {
+			P[j + 1] = X[j];
+			j--;
+			if (j == -1)
+				break;
+		}
+		P[j+1] = aux;
+	}
+	return 0;
+}
 
 int main(int argc, char *argv[]) {
     float max, min, P[N];
