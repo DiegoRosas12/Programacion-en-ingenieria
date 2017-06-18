@@ -1,11 +1,22 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci髇 de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci锟絥 de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	Divisi髇 de Ingenier韆s del Campus Irapuato-Salamanca
-	Programaci髇 en Ingenier韆*/
+	Divisi锟絥 de Ingenier锟絘s del Campus Irapuato-Salamanca
+	Programaci锟絥 en Ingenier锟絘*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+Funci贸n: Calcular el valor aproximado de la funci贸n seno.
+A diferencia del ejercicio anterior en este se utilizan funciones en lugar de hacer los c谩lculos dentro del main().
+La primera funci贸n es la sustituci贸n a la funci贸n pow(). En esta multiplicamos una variable x un n煤mero n de veces mediante el ciclo for.
+La segunda funci贸n devuelve el factorial de un n煤mero dado. Se multiplican los n煤meros 1, 2, 3 ,... entre ellos mismos y devuelve ese valor.
+S贸lo toma como entrada un n煤mero n.
+La tercera funci贸n es la que calcula el seno. Al igual que la funci贸n anterior lo calcula con una sumatoria de los t茅rminos (sig*num / den).
+En la funci贸n main se piden el valor de x y el numero de iteraciones.
+Luego se imprimen los valores.
+*/
 
 float pot(float x, int n)
 {

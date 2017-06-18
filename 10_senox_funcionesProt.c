@@ -1,11 +1,17 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	División de Ingenierías del Campus Irapuato-Salamanca
-	Programación en Ingeniería*/
+	Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+	Programaciï¿½n en Ingenierï¿½a*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+FunciÃ³n: Calcular el valor aproximado de la funciÃ³n seno.
+Se ocupan las mismas funciones que en el programa 09_senox_funcionesDec.c.
+La diferencia es que aquÃ­ las funciones estÃ¡n en forma imperativa en lugar de declarativa.
+*/
 
 float seno(float x, int n);
 float pot(float x, int n);

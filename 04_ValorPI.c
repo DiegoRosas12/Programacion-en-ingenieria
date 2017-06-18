@@ -1,11 +1,20 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	División de Ingenierías del Campus Irapuato-Salamanca
-	Programación en Ingeniería*/
+	Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+	Programaciï¿½n en Ingenierï¿½a*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+FunciÃ³n: Calcula el valor proximado de pi
+Se pide el nÃºmero de repeticiones del ciclo.
+El valor se calcula mediante un ciclo for el cual en cada iteraciÃ³n suma a la variable pi 1/2*i haciendo este tÃ©rmino positivo o negativo en cada iteraciÃ³n.
+El final del ciclo estÃ¡ dado por 2*n porque se incrementa i de dos en dos.
+Si no pusieramos 2*n el ciclo se ejecutarÃ­a solo la mitad de las iteraciones
+Al final este valor se multiplica por 4 y se imprime. 
+*/
 
 int main()
 {

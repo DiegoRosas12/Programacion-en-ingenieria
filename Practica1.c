@@ -11,6 +11,19 @@
 #include <stdio.h>
 #include <math.h>
 
+/* Función: Calculadora que utiliza las series de taylor para calcular distintos valores y hacer operaciones trigonométricas
+Factorial: Función recursiva que multiplica todos los valores que regresa desde n hasta n = 1
+combinación: Función necesaria para las fórmulas trigonometricas de la tangente y cosecante.
+Con esta se calculan los números de Bernoulli B2 en donde se utiliza el coeficiente binominal o combinatoria.
+es igual a n! / k!(n-k)! (hay varios problemas en esta funcion)
+ln(2): se hace un ciclo de sumatorias donde 1 siempre es el numerador y se divide entre n que incrementa de uno a uno.
+En la fórmula los números se alternan entre positivo y negativo por eso se multiplica por -1 por cada iteracion.
+pi/4: mismo caso que el anterior pero ahora el numerador se incrementa de dos en dos.
+pi^2/6 y pi^2/8: Se hace una serie como la primera y la segunda pero en este caso todos los términos son positivos y el denominador se eleva al cuadrado.
+1/2: 1 dividido entre la multiplicación de dos números. Notamos que ambos se incrementan dedos en dos. La única diferencia es que el primero inicia en 1 y el segundo en 3.
+Se suma 2 a i y j en cada iteración. En la siguiente fórmula se aplica de la misma manera sólo que aquí aumenta de uno en uno.
+e^x: 
+ */
 
 int factorial(int n){
     if (n == 1) {

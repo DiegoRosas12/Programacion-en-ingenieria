@@ -1,12 +1,18 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	División de Ingenierías del Campus Irapuato-Salamanca
-	Programación en Ingeniería*/
+	Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+	Programaciï¿½n en Ingenierï¿½a*/
 
 #include <stdio.h>
 #include <math.h>
-
+/*
+FunciÃ³n: Calcula el valor de x por medio de la fÃ³rmula general.
+De forma silimar al programa 2. Se separan los casos en la que la raÃ­z cuadrada es negativa y cuando es positiva.
+La diferencia con el program aanterior es que en este ocupamos un "if else" en lugar de la forma simple de cond? true: false;
+Se piden los valores de los tres coeficientes. Luego se compueba si (b^2 < 4*a*c). Con el if else se separan los cÃ¡lculos si es verdadera o falsa la condiciÃ³n.
+Al final se imprimen ambos valores de X1 y X2 para los dos casos.
+*/
 int main()
 {
 	float a, b, c, r2, xr1, xi1, xr2, xi2, cond;

@@ -7,7 +7,12 @@
 #include <stdio.h>
 #include <math.h>
 
-/*Función: */
+/*Función: este programa obtiene el valor de x en una ecuacion de tipo ax^2+bx+c. Los valores de estos tres coeficientes son pedidos.
+Debido a que dentro de la raiz cuadrada se pueden obtener números negativos y eso haría un número imaginario se establecen condiciones que,
+en el caso de que se forme un número negatvo se invierten los restandos. Las demás condiciones hacen los calculos correspondientes si hay valor imaginario o no.
+Esto se hace con la condición simple cond? true: false.
+También se encuentra x1 y x2 de los casos reales e imaginarios.
+Al final se imprimen sus componentes reales y también imaginarios */
 int main()
 {
 	float a, b, c, r2, xr1, xi1, xr2, xi2, cond;

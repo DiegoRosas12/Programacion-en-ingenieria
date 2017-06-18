@@ -1,11 +1,23 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
-	Programaci�n en Ingenier�a*/
+	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
+	Programaci�n en Ingenier�a*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+Función: Calcular el valor aproximado de la función seno.
+Las funciones están en forma imperativa. 
+Para este programa se utilizan 4 funciones. La primera calcula el seno de manera parecida a los programas anteriores.
+La función seno manda a llamar a la funcion pot() que es la que calcula el valor de una variable x a una potencia n.
+También llama a fact2(). La diferencia de esta función con respecto a fact() es que es recursiva.
+En fact2() se manda a llamar a sí misma con la diferencia de que disminuye en 1 al valor n dado.
+Cuando el valor de n es igual a 0 entonces devuelve 1 que multiplica a todos los valores anteriores de n.
+Va desde el número más chico al más grande.
+En la función main() se pide el valor de x y el número de iteraciones. Luego se imprime el valor.
+*/
 
 float seno(float x, int n);
 float pot(float x, int n);

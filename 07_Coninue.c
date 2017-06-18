@@ -1,11 +1,18 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	División de Ingenierías del Campus Irapuato-Salamanca
-	Programación en Ingeniería*/
+	Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+	Programaciï¿½n en Ingenierï¿½a*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+FunciÃ³n: Imprimir nÃºmeros de dos en dos dos veces excepto los multiplos de 10.
+Se hace un ciclo for donde se imprime un nÃºmero i que incrementa de dos en dos.
+Dentro del ciclo hay una condiciÃ³n que comprueba cuando son multiplos de 10 y tiene un continue que hace que se salga del ciclo.
+
+*/
 
 int main()
 {

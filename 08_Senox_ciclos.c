@@ -1,11 +1,22 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	División de Ingenierías del Campus Irapuato-Salamanca
-	Programación en Ingeniería*/
+	Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+	Programaciï¿½n en Ingenierï¿½a*/
 
 #include <stdio.h>
 #include <math.h>
+
+/*
+FunciÃ³n: Calcular el valor aproximado de la funcion seno.
+Se piden el valor de x asÃ­ como las iteraciones que se hacen.
+Calculamos si cada termino de la iteraciÃ³n tendrÃ¡ signo positivo o negativo con la variable sig = 1-2*(i%2)
+DespuÃ©s se hacen dos ciclos en el primero se multiplican todos los coeficientes x de la serie hasta 2*i+1 veces.
+En el segundo se multiplican los valores de nuestra variable fn que funciona como factorial.
+Al final se guardan estos valores en otras variables para no afectar su valor.
+El resultado final se calcula sumando todos los tÃ©rminos de (sig*num / den).
+Se imprime el resultado.
+*/
 
 int main()
 {
