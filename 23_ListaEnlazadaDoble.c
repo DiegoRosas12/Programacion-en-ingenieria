@@ -1,10 +1,19 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaciÛn de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciÔøΩn de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-DivisiÛn de IngenierÌas del Campus Irapuato-Salamanca
-ProgramaciÛn en IngenierÌa*/
+DivisiÔøΩn de IngenierÔøΩas del Campus Irapuato-Salamanca
+ProgramaciÔøΩn en IngenierÔøΩa*/
 
-#include "stdafx.h"
+/*
+Funci√≥n: Crear una lista enlazada doble.
+La diferencia con la lista simple del ejercicio anterior es que en este se tiene el puntero anterior adem√°s del siguiente.
+Tambi√©n tiene las funciones liberar e imprimir del anterior ejercicio. la funci√≥n inicio una funci√≥n recursiva la cual se recorre hacia el elmento anterior hasta que llega al primer elemento.
+Se crea un puntero lt1 tipo lt la cual es nuestra estructura, tambien uno llamado nv.
+Ambos se hacen = NULL. Se crea un ciclo do while donde con memoria din√°mica se inicializa nv. Se piden la estatura y el peso.
+Despu√©s se comprueba si es que existe la lista. Al primer elemento se hace su ->s y ->a = NULL. Si no es el primer elemento entonces hace el enlace anterior que apunte al utlimo elemento se la lista y que el elemento del siguiente sea igual al nuevo elemento.
+El siguiente del nuevo elemento ser√° igual a NULL.
+Se imprimen los valores de la lista. 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

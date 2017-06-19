@@ -4,7 +4,20 @@
 Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 Programaci�n en Ingenier�a*/
 
-
+/*
+Función: crear una lista enlazada simple
+Se crea una estructura llamada lt. Tiene un puntero *s este nos servirá para apuntar al elemento siguiente.
+Nuestro programa tiene 4 funciones. num_elem es una función recursiva que va sumando 1 cuando pasa por cada elemento de la lista enlazada.
+La función liberar libera la memoria ocupada por la lista. Si usaramos free() solamente, no estaríamos liberando la memoria de todos los elementos.
+Liberar() libera la memoria del elemento anterior pasando por toda la lista. Si se libera el elemento siguiente entonces la lista se rompería.
+prom es una función recursiva que tiene 3 argumentos, La lista, b que pregunta si queremos calcular el promedio del peso o la estatura y el numero de elementos n.
+prom pasa por cada elemento de la lista simple.
+Luego la función imprimir la cual como su nombre lo indica pasa por la lista enlazada imprimiendo el peso y la estatura.
+En un ciclo do while se inicia nv con memoria dinámica. Dentro de la función main() se inicial plt1 y plt2 como NULL. Si no hay elementos entonces plt1 = nuevo.
+Si hay elemnetos entonces plt2->s es igual al nuevo y plt2 = nuevo.
+Se mandan a llamar a las funciones del inicio y al final se imprime plt1.
+Se libera la memoria con liberar().
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
