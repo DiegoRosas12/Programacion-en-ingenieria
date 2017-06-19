@@ -4,8 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
 /*
 Función: Calcula el valor de x por medio de la fórmula general.
 De forma silimar al programa 2. Se separan los casos en la que la raíz cuadrada es negativa y cuando es positiva.
@@ -13,6 +11,10 @@ La diferencia con el program aanterior es que en este ocupamos un "if else" en l
 Se piden los valores de los tres coeficientes. Luego se compueba si (b^2 < 4*a*c). Con el if else se separan los cálculos si es verdadera o falsa la condición.
 Al final se imprimen ambos valores de X1 y X2 para los dos casos.
 */
+
+#include <stdio.h>
+#include <math.h>
+
 int main()
 {
 	float a, b, c, r2, xr1, xi1, xr2, xi2, cond;

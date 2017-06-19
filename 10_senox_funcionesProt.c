@@ -4,14 +4,15 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
-
 /*
 Función: Calcular el valor aproximado de la función seno.
 Se ocupan las mismas funciones que en el programa 09_senox_funcionesDec.c.
 La diferencia es que aquí las funciones están en forma imperativa en lugar de declarativa.
 */
+#include <stdio.h>
+#include <math.h>
+
+
 
 float seno(float x, int n);
 float pot(float x, int n);

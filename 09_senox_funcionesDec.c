@@ -4,8 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
 
 /*
 Función: Calcular el valor aproximado de la función seno.
@@ -17,6 +15,8 @@ La tercera función es la que calcula el seno. Al igual que la función anterior
 En la función main se piden el valor de x y el numero de iteraciones.
 Luego se imprimen los valores.
 */
+#include <stdio.h>
+#include <math.h>
 
 float pot(float x, int n)
 {

@@ -1,11 +1,23 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci髇 de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci锟絥 de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	Divisi髇 de Ingenier韆s del Campus Irapuato-Salamanca
-	Programaci髇 en Ingenier韆*/
+	Divisi锟絥 de Ingenier锟絘s del Campus Irapuato-Salamanca
+	Programaci锟絥 en Ingenier锟絘*/
 
+/*
+Funci贸n: Calcular el valor aproximado de la funci贸n seno.
+En este programa s贸lo se ocupa una funci贸n en formma declarativa.
+No se utilizan otras funciones para calcular la potencia o el factorial.
+La funci贸n tiene dos par谩metros de entrada los cuales son el valor x y el n煤mero de iteraciones n.
+Para el signo se utiliza la variable sg la cual es multiplicada por -1 en cada iteracion para ir alternando los signos.
+sx es el valor de los t茅rminos independientes los cuales se suman entre ellos y son multiplicados por el signo.
+fc se calcula dividiendo el valor de x entre (2 * i + 2))*(x / (2 * i + 3))
+En la funci贸n main se piden el valor de x y el n煤mero de iteraciones. Luego se imprime el resultado.
+*/
 #include <stdio.h>
 #include <math.h>
+
+
 
 float seno(float x, int n)
 {

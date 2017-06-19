@@ -4,9 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
-
 /*
 Función: Calcular el valor aproximado de la funcion seno.
 Se piden el valor de x así como las iteraciones que se hacen.
@@ -17,6 +14,9 @@ Al final se guardan estos valores en otras variables para no afectar su valor.
 El resultado final se calcula sumando todos los términos de (sig*num / den).
 Se imprime el resultado.
 */
+
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {

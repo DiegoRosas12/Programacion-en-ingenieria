@@ -4,15 +4,15 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
 
 /*
 Función: Imprimir números de dos en dos dos veces excepto los multiplos de 10.
 Se hace un ciclo for donde se imprime un número i que incrementa de dos en dos.
 Dentro del ciclo hay una condición que comprueba cuando son multiplos de 10 y tiene un continue que hace que se salga del ciclo.
-
 */
+
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {

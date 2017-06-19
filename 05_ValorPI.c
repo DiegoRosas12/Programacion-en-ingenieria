@@ -4,8 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
 /*
 Función: Calcular el valor aproximado de pi 
 Primero se pregunta el número de iteraciones.
@@ -14,6 +12,10 @@ A diferencia del ejercicio 4 en este no es necesario multiplicar n por 2 para qu
 Se ocupa i%2 porque sólo puede dar como resultado 0 o 1 dependiendo si i es par o impar.
 Al final el resultado se multilplica por 4 y se imprime.
 */
+
+#include <stdio.h>
+#include <math.h>
+
 int main()
 {
 	float pi;

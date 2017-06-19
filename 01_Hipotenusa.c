@@ -4,13 +4,12 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
+#include <stdio.h>
+#include <math.h>
 
 /*Función: Este programa calcula la hipotenusa de un triángulo rectángulo dados los dos catetos.
 Se ocupa la librería math.h porque para el cálculo se usa la función pow. 
 La fórmula es la raíz cuadrada de la multiplicación de los catetos más el cateto opuesto al cuadrado*/
-
-#include <stdio.h>
-#include <math.h>
 
 int main()
 {

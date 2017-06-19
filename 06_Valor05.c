@@ -4,8 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
 
 /*
 Función: Calcula el valor aproximado de 0.5 mediante series.
@@ -15,6 +13,9 @@ Se hace un ciclo while donde se suma el valor resultado en forma de serie.
 Se calcula 1.0 / ((2 * i + 1)*(2 * i + 3)))
 Al final se imprime el resultado.
 */
+#include <stdio.h>
+#include <math.h>
+
 int main()
 {
 	float d05;

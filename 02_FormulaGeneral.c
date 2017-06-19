@@ -4,8 +4,7 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
+
 
 /*Función: este programa obtiene el valor de x en una ecuacion de tipo ax^2+bx+c. Los valores de estos tres coeficientes son pedidos.
 Debido a que dentro de la raiz cuadrada se pueden obtener números negativos y eso haría un número imaginario se establecen condiciones que,
@@ -13,6 +12,9 @@ en el caso de que se forme un número negatvo se invierten los restandos. Las de
 Esto se hace con la condición simple cond? true: false.
 También se encuentra x1 y x2 de los casos reales e imaginarios.
 Al final se imprimen sus componentes reales y también imaginarios */
+#include <stdio.h>
+#include <math.h>
+
 int main()
 {
 	float a, b, c, r2, xr1, xi1, xr2, xi2, cond;

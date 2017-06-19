@@ -4,9 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
-
 /*
 Función: Calcular el valor aproximado de la función seno.
 Las funciones están en forma imperativa. 
@@ -18,6 +15,10 @@ Cuando el valor de n es igual a 0 entonces devuelve 1 que multiplica a todos los
 Va desde el número más chico al más grande.
 En la función main() se pide el valor de x y el número de iteraciones. Luego se imprime el valor.
 */
+
+#include <stdio.h>
+#include <math.h>
+
 
 float seno(float x, int n);
 float pot(float x, int n);

@@ -4,9 +4,6 @@
 	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 	Programaci�n en Ingenier�a*/
 
-#include <stdio.h>
-#include <math.h>
-
 /*
 Función: Calcula el valor proximado de pi
 Se pide el número de repeticiones del ciclo.
@@ -15,6 +12,9 @@ El final del ciclo está dado por 2*n porque se incrementa i de dos en dos.
 Si no pusieramos 2*n el ciclo se ejecutaría solo la mitad de las iteraciones
 Al final este valor se multiplica por 4 y se imprime. 
 */
+
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {

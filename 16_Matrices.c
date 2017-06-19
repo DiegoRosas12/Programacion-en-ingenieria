@@ -1,8 +1,19 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
-	Programaci�n en Ingenier�a*/
+	Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
+	Programaci�n en Ingenier�a*/
+
+/*
+Función: Hacer suma, resta y multiplicación de matrices.
+Se crean arreglos con un tamaño máximo definido com M y N
+Se pide el tamaño de las matrices A y B. Se comprueba que sea mayor a 1 y menor al límite.
+Con un ciclo for dentro de otro ciclo for se llena la matriz. Uno recorre los renglones y otro cambia de columna.
+Luego se comprueba si son del mismo tamaño ambas matrices. Si es cierto esto entonces se hace la suma y la resta de ambas matrices y se guardan en los arregos C y D.
+Si el número de columnas de A es igual al número de filas de B entonces se procede con la multiplicación de las matrices.
+Se ocupan tres ciclos for anidados. La matriz dónde se guarda la multiplicación es E. Se suma la multiplicación de A[i][k] * B[k][j].
+Luego mediante ciclos for parecidos a los que se usaron para registrar los valores de las matrices se imprimen los resultados.
+*/
 
 #include <stdio.h>
 

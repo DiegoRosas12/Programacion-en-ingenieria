@@ -1,11 +1,26 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci髇 de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci锟絥 de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-	Divisi髇 de Ingenier韆s del Campus Irapuato-Salamanca
-	Programaci髇 en Ingenier韆*/
+	Divisi锟絥 de Ingenier锟絘s del Campus Irapuato-Salamanca
+	Programaci锟絥 en Ingenier锟絘*/
+
+/*
+Funci贸n: Calcular el seno de un valor x.
+Para este programa se ocupa solamente una funcion.
+La sunci贸n seno2() est谩 en forma declarativa y adem谩s es recursiva.
+Para guardar el valor de las variables fc e i se usa la palabra reservada 'static'. Si no se usara entonces el valor previo de las varibles se perder铆a.
+Esta funci贸n al igual que la del programa anterior calcula fc con (x/(2*i))*(x/(2*i+1)). La funci贸n recursiva sirve como si fuera un ciclo y por eso el valor anterior de fc se multiplica por su nuevo valor.
+El valor de cada t茅rmino que se suma finalmente se calcula en c.
+La funci贸n dice que cuando ha llegado al n煤emro final de iteraciones (se pone n+1 ya que hay un i++ antes) entonces devuelva el valor x.
+Cuando va saliendo de cada iteraci贸n se suma el valor de c donde se hacen nuestros c谩lculos y luego se calcula al termino anterior.
+Esto funciona como si fuera un ciclo y se pusiera +=
+Dentro de la funci贸n main() se pide el valor de x y el n煤mero de iteraciones n.
+Se imprime el resultado.
+*/
 
 #include <stdio.h>
 #include <math.h>
+
 
 float seno2(float x, int n)
 {
