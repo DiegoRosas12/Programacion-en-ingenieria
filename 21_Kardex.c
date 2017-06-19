@@ -1,9 +1,21 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaci�n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
-Programaci�n en Ingenier�a*/
-
+Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
+Programaci�n en Ingenier�a*/
+/*
+Función: Crear un kardex.
+Se crean 3 estructuras. Una para guardar nombres, otra para guardar la materia y otra para guardar el kardex general. Con typedef se evita poner struct cada vez que se llama la estructura
+La función capturar funciona para ingresar una cadena de texto de manera similar a gets(). Solamente que en gets() no hay un límite de caracteres y por lo tanto es insegura.
+Dentro del main() Se abre un archivo de texto fp. Se crea un dato tipo kt llamado kt1. Luego dos punteros tipo UDA.
+Se abre un rachivo binario. Si no hay archivo binario con fread se leen kt1 e i. Se usa memoria dinámica para crear los espacios de UDAs en el kardex.
+Si i = 0 enotnces se piden los datos del alumno. Hay un ciclo for que llena todos los datos de las materias según el numero que se dió.
+Se obtienen los créditos con el cuarto y quinto caracter de la clave de la materia. Si i no es igual a 0 entonces se crean UDA2 con memoria dinámica. Se copian los datos de los UDA1.
+Se hace un ciclo for donde se suman las calificaciones y se divide entre el número de estas para obtener el periodo. Tambien el el mismo ciclo se calcula la suma de los creditos cursdos y de los aprobado.
+Se calcula el año de egreso con (int)(kt1.Anio_ing + kt1.NPe/2.0);
+Luego se imprimen los datos del alumno y sus materias. Se abre un archivo binario donde se guardan kt1, i y UDA1.
+Luego se libera la memoria de fp, UDA1 y UDA2.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

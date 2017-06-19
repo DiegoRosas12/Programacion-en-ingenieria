@@ -4,6 +4,21 @@
 Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 Programaci�n en Ingenier�a*/
 
+/*
+Función: Ordenar un arreglo y calcular su media.
+El programa tiene dos funciones de ordenamiento de tipo burbuja. La diferencia está en que una toma como argumentos un puntero y la otra un doble puntero.
+Lo que significa que uno funciona trabajando con la dirección de la posición del valor y el otro con la dirección de esa dirección.
+En la función main() se pide el número de elementos y el máximo y el mínimo. 
+Se inicializan ambos punteros con malloc. Para el puntero simple es pX = (float*)malloc(n * sizeof(float)); y para el doble es ppX = (float**)malloc(n * sizeof(float*));
+Se hace un ciclo for donde se llena cada espacio de pX con valores aleatorios.
+Luego se le indica al doble puntero que debe de ser igual a la posición del puntero con *(ppX + i) = pX + i;
+Se suman los valores de pX en la variable media y se imprimen los valores de pX.
+Luego se divide la media entre el número de elementos.
+Se ordena el vector copia (el de doble puntero) con la función burbuja2().
+Se imprimen el vector ordenado y el desordenado con ciclos for. El ordenado es el que está en pX a ese no lo hemos modificado.
+El vector ppX como habíamos dicho anteriormente fue sobre el que se hizo el ordenamiento.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

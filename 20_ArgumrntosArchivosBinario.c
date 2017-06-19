@@ -4,6 +4,19 @@
 Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 Programaci�n en Ingenier�a*/
 
+/*
+Función: Hacer uso de un archivo binario para guardar un arreglo y luego leerlo para ordenarlo.
+Al igual que en el programa anterior en este tambien utiliza la función str2num para transformar correctamente los argumentos de entrada a entero.
+También mediante argumentos de entrada se piden el número de elementos, maximo y mínimo según el número de argumentos dado.
+Se abre un archivo con FILE *fp y fp = fopen("Prueba.bin", "wb"); ahora como usamos wb será un archivo binario.
+Se inicializa el puntero pA con malloc. El puntero se llena con números aleatorios. 
+Se escribe sobre el docuento con fwrite(). El primer arguento es en dónde se guarda el elemento, el segundo el tamaño del dato, luego el número de elementos y al final el archivo donde se guarda.
+Con fwrite se escriben n y pA. Con el algortimo burbuja se ordena pA. Luego se vuelve a escribir pA. Se cierra el archivo fp. Se libera pA.
+Se vuelve a abrir el archivo binario con el que habíamos trabajado. Ahora se ocupa fp = fopen("Prueba.bin", "rb"); rb es 'read binary'.
+Toma los mismos argumentos que fwrite. El primero es la variable dónde se guardará. Se inicializa un puntero pB.
+Luego se imprimen los punteros ordenados y los desordenados
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

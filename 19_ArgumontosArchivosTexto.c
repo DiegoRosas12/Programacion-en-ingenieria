@@ -4,6 +4,19 @@
 Divisi�n de Ingenier�as del Campus Irapuato-Salamanca
 Programaci�n en Ingenier�a*/
 
+/*
+Función: Imprimir en un archivo de texto un vector con números aleatorios y luego ordenados.
+La función str2num toma como argumento de entrada un caracter. Lo qque hace es transformarlo en un número. 
+Se necesita ya que nuestro programa ocupa argumentos de entrada, estos se guardan en char *argv[] el cual es tipo char y por lo tanto no podemos trabajar con este.
+Se hizo primero la impresión del caracter que obtenía la computadora sin la función y luego se ajustó para que cada número en letra fuera su correspondiente en dígito.
+En la función main se abre un docuemnto de texto con FILE *fp y fp = fopen("Prueba.txt", "wt") wt significa 'write text' es un archivo de escritura. Escribe sobre el mismo archivo ya abierto.
+Dependiendo de la cantidad de argumentos se toman como valores de numero de elementos (n), máximo y mínimo.
+Para eso se hace un switch que toma por argumento a argc que es el número de argumentos de entrada. Si no ingresa ninguno se piden con main los 3 elementos. Si se da 1 entonces se guarda n con str2num() y así sucesivamente.
+Si los valores máximo y mínimo están invertidos entonces se intercambian. Se inicializa el puntero pA con malloc para crear n espacios vacíos.
+Luego con un ciclo for se asignan valores aleatorios. Se imprime en el documento de texto con fprintf() los valores de pA desordenados.
+Se hace un ordenamiento burbuja en el puntero. Posteriormente se imprime el vector ordenado en el docuemnto de texto. 
+Se debe de cerrar el docuento de texto al igual que el puntero pA debido a que usamos memoria dinámica.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
