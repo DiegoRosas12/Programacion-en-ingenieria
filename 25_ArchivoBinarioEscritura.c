@@ -1,10 +1,19 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-División de Ingenierías del Campus Irapuato-Salamanca
-Programación en Ingeniería*/
+Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+Programaciï¿½n en Ingenierï¿½a*/
 
-#include "stdafx.h"
+/*
+FunciÃ³n: Hacer una lista de alumnos y guardarlo en un archivo binario.
+Se crea una estructura llamada Alum. Se abre un archivo fp y se pregunta por el nÃºmero de estudiantes.
+Luego se inicia un puntero x tipo alumno con calloc. Ahora utilizamos calloc para iniciar los espacios en 0 en lugar de en blanco.
+Con un ciclo for se pide el NUA y dentro del for hay otro ciclo que guarda la calificaciÃ³n de las materias y suma las calificaiones en prom.
+Esta es la razÃ³n de que se use calloc, porque se generarÃ­an problemas al hacer operaciones con espacios vacÃ­os en lugar de ceros.
+Al final se divide el promedio entre el nÃºmero de materias.
+Se abre un archivo llamado 'Datos.bin'. En este se guardan los valores n y x.
+Se cierra el archivo fp y se libera x.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -24,23 +33,23 @@ int main(int argc, char *argv[])
 	FILE *fp;
 	do {
 		printf("Ingrese el numero de estudiantes: ");
-		scanf_s("%d", &n);
+		scanf("%d", &n);
 	} while (n<1);
 	x = (Alum*)calloc(n, sizeof(Alum));
 	for (i = 0; i < n; i++)
 	{
 		printf("Ingrese el NUA: ");
-		scanf_s("%d", &((x+i)->NUA));  // x[i].NUA == (x+i)->NUA == *(x+i).NUA
+		scanf("%d", &((x+i)->NUA));  // x[i].NUA == (x+i)->NUA == *(x+i).NUA
 		for (j = 0; j < NM; j++)
 		{
 			printf("Calificacion %d: ", j + 1);
-			scanf_s("%f", &aux);
+			scanf("%f", &aux);
 			(x + i)->Mat[j] = (int)(aux * 10);
 			(x + i)->prom += aux;
 		}
 		x[i].prom /= NM;
 	}
-	fopen_s(&fp, "Datos.bin", "w+b");
+	fopen(&fp, "Datos.bin", "w+b");
 	fwrite(&n, sizeof(int), 1, fp);
 	fwrite(x, sizeof(Alum), n, fp);
 	fclose(fp);

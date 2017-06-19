@@ -1,10 +1,22 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicaciÛn de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciÔøΩn de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-DivisiÛn de IngenierÌas del Campus Irapuato-Salamanca
-ProgramaciÛn en IngenierÌa*/
+DivisiÔøΩn de IngenierÔøΩas del Campus Irapuato-Salamanca
+ProgramaciÔøΩn en IngenierÔøΩa*/
 
-#include "stdafx.h"
+/*
+Hacer una base de datos de un paciente y ordenarlos.
+Esta es una lista enlazada simple de paceinte. Primero se declara la estructura paciente. Tiene el puntero siguiente y tambien ordenar.
+Se toma la funci√≥n num_elem del ejercicio anterior y la funci√≥n imprimir es muy similar solo que en esta imprime el peso, la edad, la estatura y la temperatura.
+La funci√≥n burbuja tiene como argumento un puntero de tipo paciente. Se crea un doble puntero tipo paciente. Se inicializa este con malloc. Se copia lt1 en lt2.
+Se hace el algorimo burbuja que ordena segun la edad comparando con lt2.
+Dentro de un ciclo for se establece la lista simple formada por los elementos de lt2 con lt2[i]->s = lt2[i+1];
+Se hace que el siguiente del √∫ltimo elemento sea igual a NULL.
+Dentro del main() se pide el nombre con un do while y getchar lo cual hace que no tenga problemas con los saltos de l√≠neas ni espacios. Se piden los dem√°s datos.
+Luego se ordena el nuevo elemento con la funcion burbuja porque es el metodo elegido en la estructura.
+Se hacen las conexiones de lista enlazada simple como en el ejercicio 22.
+Luego se imprimen los pacientes.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 

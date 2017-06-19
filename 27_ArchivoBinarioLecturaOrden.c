@@ -1,10 +1,19 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-División de Ingenierías del Campus Irapuato-Salamanca
-Programación en Ingeniería*/
+Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+Programaciï¿½n en Ingenierï¿½a*/
 
-#include "stdafx.h"
+/*
+FunciÃ³n: Leer un archivo binario con datos de alumno.
+El programa tiene dos estructuras una llamada Alum y otra oAlum la cual tiene el puntero anterior y siguiente.
+Se abre el archivo Datos.bin con fp = fopen("Datos.bin", "r+b");.
+Se lee del archivo la variable n, se crea el espacio tipo Alum x y se lee del archivo. Se imprime NUA MAterias y promedio de x.
+Hay variables tipo oAlum llamadas ox y nx. Estas funcionarÃ¡n de un modo parecido a lt1 y nv. Se hace un enlace doble para formar las listas.
+La diferencia es que al agregar un nuevo elemento se acomoda con (x[ox->i].prom > x[nx->i].prom)&&(ox->s!=NULL) ox = ox->s;
+Esto permite ordenar la lista. Al final se imprime la lista ordenada.
+Se liberan ox y x.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -28,7 +37,7 @@ int main(int argc, char *argv[])
 	int n, i, j;
 	float aux;
 	FILE *fp;
-	fopen_s(&fp, "Datos.bin", "r+b");
+	fp = fopen("Datos.bin", "r+b");
 	fread(&n, sizeof(int), 1, fp);
 	x = (Alum*)malloc(n * sizeof(Alum));
 	fread(x, sizeof(Alum), n, fp);

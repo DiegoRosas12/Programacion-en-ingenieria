@@ -1,10 +1,17 @@
-// Ejemplos.cpp: define el punto de entrada de la aplicación de consola.
+// Ejemplos.cpp: define el punto de entrada de la aplicaciï¿½n de consola.
 // Mario Alberto Ibarra Manzano
 /*	Universidad de Guanajuato
-División de Ingenierías del Campus Irapuato-Salamanca
-Programación en Ingeniería*/
+Divisiï¿½n de Ingenierï¿½as del Campus Irapuato-Salamanca
+Programaciï¿½n en Ingenierï¿½a*/
 
-#include "stdafx.h"
+/*
+FunciÃ³n: Leer un archivo binario e imprimir una lista de alumnos.
+Este programa solo puede funcionar habiendo ejecutado el programa anterior que generaba a "Datos.bin".
+Se declara una estructura llamada Alum. Se abre un archivo fp. Leugo se lee Datos.bin con fopen_s(&fp, "Datos.bin", "r+b");
+r+b lee binarios.
+Luego con fread se lee a varible n. Se crea el espacio para x con malloc y luego se lee x del archivo con fread(x, sizeof(Alum), n, fp);
+Al final se imprimen los datos de los alumnos. Se libera la memoria.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
